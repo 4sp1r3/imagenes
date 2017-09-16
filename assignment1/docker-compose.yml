@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+  notebook:
+    build: .
+    image: asgn1
+    container_name: asgn1
+    volumes:
+     - "./lab1:/home/jovyan/lab1"
+    ports:
+      - "8888:8888"
